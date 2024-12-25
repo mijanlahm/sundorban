@@ -1,0 +1,44 @@
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table thead {
+    background-color:  #04aa6d;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(4, 170, 109, 0.1);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+    
