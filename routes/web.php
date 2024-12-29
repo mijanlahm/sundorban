@@ -17,9 +17,6 @@ use App\Http\Controllers\Seller\SellerStoreController;
 use App\Livewire\HomepageComponent;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/homeforlogin', function () {
-    return view('welcome');
-});
 
 
 Route::controller(HomePageController::class)->group(function () {
