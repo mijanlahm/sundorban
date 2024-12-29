@@ -17,6 +17,9 @@ use App\Http\Controllers\Seller\SellerStoreController;
 use App\Livewire\HomepageComponent;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/homeforlogin', function () {
+    return view('welcome');
+});
 
 
 Route::controller(HomePageController::class)->group(function () {
@@ -36,6 +39,7 @@ Route::middleware(['auth', 'verified', 'rolemanager:admin'])->group(function () 
         Route::controller(AdminMainController::class)->group(function () {
             Route::get('/dashboard', 'index')->name('admin');
             Route::get('/setting', 'admin_setting')->name('adminSetting');
+            Route::put('/setting/homepagesetting/update', 'update_homepage_setting')->name('homepageSettingUpdate');
             Route::get('/manage/users', 'manage_users')->name('manageUsers');
             Route::get('/manage/stores', 'manage_stores')->name('manageStores');
             Route::get('/cart/history', 'cart_history')->name('cartHistory');

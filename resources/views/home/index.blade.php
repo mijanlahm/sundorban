@@ -6,9 +6,9 @@
           <div class="row align-items-center">
             <div class="col-lg-7">
               <div class="card-lg mb-4 mb-lg-0">
-                <h2>75%</h2>
-                <h4>Flat Discount</h4>
-                <p>Because of store opening carnival, Ecipse providing a huge discounted sell</p>
+                <h2>{{ $homepagesetting->discounted_percent }}%</h2>
+                <h4>{{ $homepagesetting->discount_heading }}</h4>
+                <p>{{ $homepagesetting->discount_sub_heading }}</p>
 
                 <div class="float-item">
                   <img src="{{ asset('home/img/shoe.png') }}" alt="">
@@ -24,15 +24,15 @@
                 </div>
 
                 <div>
-                  <h2>Comfy</h2>
-                  <p>Bean Bag Chair</p>
+                  <h2>{{ $homepagesetting->featuredProduct1->product_name }}</h2>
+                  <p>${{ $homepagesetting->featuredProduct1->regular_price }}</p>
                 </div>
               </div>
 
               <div class="card-sm sky">
                 <div>
-                  <h2>VR</h2>
-                  <p>Glasses</p>
+                  <h2>{{ $homepagesetting->featuredProduct2->product_name }}</h2>
+                  <p>${{ $homepagesetting->featuredProduct2->regular_price }}</p>
                 </div>
 
                 <!-- product image -->

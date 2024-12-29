@@ -34,34 +34,34 @@
                         </div>
                     @endif
 
-                    <form action="" method="POST">
+                    <form action="{{ route('homepageSettingUpdate') }}" method="POST">
 
                         @csrf
-
+                        @method('PUT')
                         <!-- Category Name -->
                         <div class="mb-3">
                             <label for="discounted_product_id" class="form-label">Select Discounted Product</label>
                             <select name="discounted_product_id" id="discounted_product_id" class="form-control">
                                 <option value="">Select product</option>
                                 @foreach ($products as $product)
-                                    <option value="{{ $product->id }}">{{ $product->product_name }}</option>
+                                    <option value="{{ $product->id }}" {{ $homepagesetting->discounted_product_id == $product->id? 'selected':'' }}>{{ $product->product_name }}</option>
                                 @endforeach
                             </select>
 
                             <label for="discounted_percent" class="form-label">Discounted Percent</label>
-                            <input type="number" name="discounted_percent" id="discounted_percent" class="form-control" >
+                            <input type="number" value="{{ $homepagesetting->discounted_percent }}" name="discounted_percent" id="discounted_percent" class="form-control" >
 
                             <label for="discount_heading" class="form-label">Discount Heading</label>
-                            <input type="text" name="discount_heading" id="discount_heading" class="form-control" >
+                            <input type="text" value="{{ $homepagesetting->discount_heading }}" name="discount_heading" id="discount_heading" class="form-control" >
                             
                             <label for="discount_sub_heading" class="form-label">Discount Sub Heading</label>
-                            <input type="text" name="discount_sub_heading" id="discount_sub_heading" class="form-control" >
+                            <input type="text" value="{{ $homepagesetting->discount_sub_heading }}" name="discount_sub_heading" id="discount_sub_heading" class="form-control" >
 
                             <label for="featured_product_1_id" class="form-label">Select featured Product 1</label>
                             <select name="featured_product_1_id" id="featured_product_1_id" class="form-control">
                                 <option value="">Select product</option>
                                 @foreach ($products as $product)
-                                    <option value="{{ $product->id }}">{{ $product->product_name }}</option>
+                                    <option value="{{ $product->id }}" {{ $homepagesetting->featured_product_1_id == $product->id? 'selected':'' }}>{{ $product->product_name }}</option>
                                 @endforeach
                             </select>
 
@@ -69,7 +69,7 @@
                             <select name="featured_product_2_id" id="featured_product_2_id" class="form-control">
                                 <option value="">Select product</option>
                                 @foreach ($products as $product)
-                                    <option value="{{ $product->id }}">{{ $product->product_name }}</option>
+                                    <option value="{{ $product->id }}" {{ $homepagesetting->featured_product_2_id == $product->id? 'selected':'' }}>{{ $product->product_name }}</option>
                                 @endforeach
                             </select>
 

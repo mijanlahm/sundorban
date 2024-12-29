@@ -99,7 +99,7 @@
 					</li>
 
 					<li class="sidebar-item {{ request()->routeIs('createProductDiscount')?'active' : '' }}">
-						<a class="sidebar-link" href="{{ route('createProductDiscount') }}">
+						<a class="sidebar-link" href="{{ route('createProductDiscount') }}" onclick="return false;>
               <i class="align-middle" data-feather="plus"></i> <span class="align-middle">Create Discount</span>
             </a>
 					</li>

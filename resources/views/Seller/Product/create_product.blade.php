@@ -60,6 +60,7 @@
                                 <div class="mb-3">
                                     <label for="store_id">Select your store for this product</label>
                                     <select name="store_id" id="store_id" class="form-control">
+                                        <option value="">-- Select Store --</option>
                                         @foreach ($stores as $store)
                                             <option value="{{ $store->id }}">{{ $store->store_name }}</option>
                                         @endforeach
