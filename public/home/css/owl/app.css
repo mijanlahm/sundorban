@@ -1,0 +1,331 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+/* Global Styles */
+
+
+
+/* ----- Home section start ----- */
+.home-section {
+    padding: 250px 0px 200px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 112px;
+    background-image: url(/images/shape-bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.home-section .home-content h1 {
+    font-size: 55px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+}
+
+.home-section .home-content p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+.mybtn1,
+.mybtn2 {
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 12px 36px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mybtn1 {
+    background-color: #ffffff;
+}
+
+.mybtn2 {
+    color: #ffffff;
+}
+
+.mybtn1:focus,
+.mybtn2:focus {
+    box-shadow: none;
+}
+
+.mybtn2:hover {
+    color: #ffffff;
+}
+
+.mybtn2::before,
+.mybtn1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(252, 250, 250, 0.986);
+    z-index: -1;
+    transition: all .8s ease;
+}
+
+.mybtn2:hover::before,
+.mybtn1:hover::before {
+    width: 100%;
+}
+
+
+.home-section .home-image {
+    position: relative;
+}
+
+.home-section .home-image img {
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    left: 150px;
+    top: -50px;
+    animation: productani01 5s linear infinite;
+}
+
+@keyframes productani01 {
+    0%, 100% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.home-section .bg-shapes div {
+    position: absolute;
+    opacity: 0.5;
+}
+
+.home-section .bg-shapes div:nth-child(1) {
+    height: 100px;
+    width: 100px;
+    top: 20%;
+    left: 20%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: shapeani01 5s linear infinite;
+}
+
+.home-section .bg-shapes div:nth-child(2) {
+    height: 80px;
+    width: 80px;
+    top: 60%;
+    left: 60%;
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    border-bottom: 5px solid transparent;
+    animation: shapeani02 7s linear infinite;
+}
+
+
+.home-section .bg-shapes div:nth-child(3) {
+    height: 60px;
+    width: 60px;
+    top: 10%;
+    left: 90%;
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    animation: shapeani02 7s linear infinite;
+}
+
+
+.home-section .bg-shapes div:nth-child(4) {
+    height: 200px;
+    width: 200px;
+    top: 40%;
+    left: calc(100% - 100px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: shapeani03 10s linear infinite;
+}
+
+.home-section .bg-shapes div:nth-child(5) {
+    height: 100px;
+    width: 100px;
+    top: 40%;
+    left: calc(0% - 50px);
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    animation: shapeani02 10s linear infinite;
+}
+
+@keyframes shapeani01 {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+    
+}
+@keyframes shapeani02 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }   
+}
+@keyframes shapeani03 {
+    0%, 100% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }   
+}
+
+
+/* ----- Home section end ----- */
+
+
+/* ----- Products Section Start ----- */
+
+.products-section {
+	padding: 20px 0 20px;
+	margin-top: 50px;
+	background-color: white;
+}
+
+.products-section .products-item {
+    box-shadow: 0 0 10px #dddde3;
+    margin: 15px 0;
+}
+
+.products-section .products-item .product-img {
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+
+.products-section .product-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.products-section .products-item:hover .product-img .overlay {
+    opacity: 1;
+}
+
+.products-section .product-img .overlay .btn {
+    margin: auto;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+}
+
+.products-section .products-item:hover .product-img .overlay .btn {
+    transform: translateY(0px);
+}
+
+.products-section .products-item .product-img img {
+    width: 100%;
+    display: block;
+}
+
+.products-section .product-content {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.products-section .product-content .product-price {
+    margin: 15px 0 5px;
+}
+
+.products-section .product-content .product-price .new-price {
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.products-section .product-content .product-price .old-price {
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    color: #959595;
+}
+
+.products-section .product-content .product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 26px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.products-section .owl-carousel .owl-nav {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.products-section .owl-carousel .owl-nav button.owl-next:focus,
+.products-section .owl-carousel .owl-nav button.owl-prev:focus {
+    outline: none;
+}
+
+.products-section .owl-carousel .owl-nav button.owl-next,
+.products-section .owl-carousel .owl-nav button.owl-prev {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.products-section .owl-carousel .owl-nav button.owl-next span,
+.products-section .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 40px;
+    margin-top: -13px;
+    display: block;
+}
+
+.productbackground {
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+/* ----- Products Section Start ----- */
+
+

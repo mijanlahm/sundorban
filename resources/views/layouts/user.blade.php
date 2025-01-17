@@ -3,8 +3,9 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+    
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -14,12 +15,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- owl's stylesheet -->
-    <link rel="stylesheet" href="{{ asset('home/css/owl/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('home/css/owl/owl.theme.default.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/darkly/bootstrap.min.css">
+    <!-- ===================
+               start Slier  
+         =================== -->
+    
+           <!-- Related product Style -->
+    <link rel="stylesheet" href="{{ asset('home/css/related-product-slider.css') }}">
+    <!-- Animate -->
+    <link rel="stylesheet" href="{{ asset('home/css/animate.css') }}">
+     
+    <!-- ===================
+             end slider 
+         =================== -->
+
+
+    <!-- ===================
+           start Owl carousel 
+         =================== -->
+
+    <!-- ===== Owl carousel -->
+     <link rel="stylesheet" href="{{ asset('home/css/owl/owl.carousel.min.css') }}">
+     <link rel="stylesheet" href="{{ asset('home/css/owl/owl.theme.default.min.css') }}">
+   
+     <!-- ===== Custom CSS ===== -->
+     <link rel="stylesheet" href="{{ asset('home/css/owl/app.css') }}">
+
+     <!-- ===== Responsive CSS ===== -->
+     <link rel="stylesheet" href="{{ asset('home/css/owl/responsive.css') }}">
+     <link rel="stylesheet" href="{{ asset('home/css/owl/effects.css') }}">
+
+     <!-- ===== Fontawesome ===== -->
+     <link rel="stylesheet" href="{{ asset('home/css/owl/fontawesome.css') }}">
+    
+
+       <!-- ===================
+             end Owl carousel 
+            =================== -->
+
+      <!-- ===== lory carousel ===== -->
+      <link rel="stylesheet" href="{{ asset('home/css/Multiple/lory.css') }}">
+
+      <!-- ===== basic carousel ===== -->
+      <link rel="stylesheet" href="{{ asset('home/css/basic/carouseller.css') }}">
+      
 
     <!-- main stylesheet -->
     <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
+
 
     <!-- title -->
     <title>QuickCart || Details</title>
@@ -234,32 +279,51 @@
       </div>
     </footer>
 
-    <!-- javaScript -->
+  
+    <!-- bootstrap javaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
 
-    <!-- owl carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+
+    
+
+    <!-- jquery Library -->
     <script src="{{ asset('home/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('home/js/owl.carousel.min.js') }}"></script>
+    <!-- ===== Jquery js ===== -->
+    <script src="{{ asset('home/js/owl/jquery-3.6.0.min.js') }}"></script>
 
-    <!-- main js -->
-    <script src="{{ asset('home/js/app.js') }}"></script>
+    
 
-    <!-- owl carousel init -->
-    <script>
-      $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 1
-          }
-        }
-      })
-    </script>
+    <!-- Related Products Slider -->
+    <script src="{{ asset('home/js/related_product_slider/related-product-slider.min.js') }}"></script>
+
+    <!-- ===== Owl carousel js ===== -->
+    <script src="{{ asset('home/js/owl/owl.carousel.min.js') }}"></script>
+
+    <!-- ===== lory carousel js ===== -->
+    <script src="{{ asset('home/js/Multiple/lory.min.js') }}"></script>
+    <script src="{{ asset('home/js/Multiple/jquery.lory.min.js') }}"></script>
+
+    <!-- ===== basic carousel js ===== -->
+    <script src="{{ asset('home/js/basic/carouseller.min.js') }}"></script>
+    <script src="{{ asset('home/js/basic/jquery.easing.1.3.js') }}"></script>
+
+
+
+
+    
+
+    
+    <!-- Document Ready Script -->
+    <script src="{{ asset('home/js/document_ready.js') }}"></script>
+
+    
+    
+
   </body>
 
 </html>

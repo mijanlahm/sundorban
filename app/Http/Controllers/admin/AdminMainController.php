@@ -14,9 +14,11 @@ class AdminMainController extends Controller
     }
 
     public function admin_setting(){
+
         $products = Product::all();
         $homepagesetting = HomePageSetting::first() ?? new HomePageSetting();
         return view('admin.admin_setting', compact('products', 'homepagesetting'));
+   
     }
 
     public function update_homepage_setting( Request $request){
