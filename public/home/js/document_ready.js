@@ -175,6 +175,33 @@ $( document ).ready( function() {
       } );
 
 /*=================================
+            category-1 owl Carousel
+  =================================*/
+  $(document).ready(function() {
+    var owl = $('#category-1-carousel');
+    owl.owlCarousel({
+      margin: 20,
+      nav: false,
+      dots:false,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  })
+
+
+
+
+/*=================================
             Owl Carousel
   =================================*/
 
@@ -228,19 +255,29 @@ $( document ).ready( function() {
     });
 
 /*=================================
-            lory Carousel
+            category-2 owl Carousel
   =================================*/
+  $(document).ready(function() {
+    var owl = $('#category-2-carousel');
+    owl.owlCarousel({
+      margin: 20,
+      nav: false,
+      dots:false,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  })
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var ease = document.querySelector('.js_ease');
-
-    lory(ease, {
-        infinite: 1,
-        slidesToScroll: 1,
-        slideSpeed: 500,
-        ease: 'cubic-bezier(0.455, 0.03, 0.515, 0.955)'
-    });
-});
 
 /*=================================
             lory Carousel
@@ -265,11 +302,11 @@ $( document ).ready( function() {
   });
 
   /*=================================
-            category owl Carousel
+            services owl Carousel
   =================================*/
  
   $(document).ready(function() {
-    var owl = $('#category-carousel');
+    var owl = $('#services-carousel');
     owl.owlCarousel({
       margin: 25,
       nav: true,
@@ -290,6 +327,51 @@ $( document ).ready( function() {
 
 
   /*=================================
-          subcategory  owl Carousel
+          inspiration  owl Carousel
   =================================*/
-  
+  $('#inspiration-carousel').owlCarousel({
+    margin:10,
+    loop:true,
+    autoWidth:true,
+    items:5,
+    nav:true
+})
+
+
+ /*=================================
+          favourites owl Carousel
+  =================================*/
+
+  $('#favourites-carousel').owlCarousel({
+    margin:10,
+    autoplay:true,
+    loop:true,
+    autoWidth:true,
+    items:5,
+    nav:true
+})
+
+
+/*=================================
+      Recommended owl Carousel
+  =================================*/
+  $(document).ready(function() {
+    var owl = $('#recommended-carousel');
+    owl.owlCarousel({
+      margin: 35,
+      nav:true,
+      dots:false,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  })

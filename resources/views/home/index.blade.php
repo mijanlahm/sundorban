@@ -237,14 +237,99 @@
         </div>
     </section>
 
-    @livewire('home-product-filter-component')
+
+    <section class="category-1-section" id="category-1">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-lg-12">
+
+            
+
+            <div class="owl-carousel owl-theme owl-carousel-custom" id="category-1-carousel">
+              
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+
+                </div>
+              </div>
+
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              
+
+            </div>
+
+            
+
+        </div>
+      </div>
+    </section>
 
     
     <!-- ===== Product Section Start ===== -->
     <section class="products-section" id="products">
-      <div class="container">
-        <div class="row" style="position: relative;">
-          <h2 class="subtitle">Top Rated</h2>
+      <div class="container sectionbackground">
+        <div class="row sectionpaddingtoprating" style="position: relative;">
+          
+          <div class="toprateddivheading">
+            <h2>Top Rated</h2>
+          </div>
+
           <div class="container productbackground">
           <div class="owl-carousel" id="product-carousel">
           <!-- ----- Products Item Start -->
@@ -355,80 +440,378 @@
     </section>
         <!-- ===== Product Section End ===== -->
 
-
-    <section id="loryslider">
+    <section class="category-2-section" id="category-2">
       <div class="container">
         <div class="row align-items-center">
           
           <div class="col-lg-12">
-            <h2 style="margin-bottom: 10px;">On Sale</h2>
 
-            <div class="slider js_ease ease">
-                <div class="frame js_frame">
-                    <ul class="slides js_slides">
-                        <li class="js_slide">1</li>
-                        <li class="js_slide">2</li>
-                        <li class="js_slide">3</li>
-                        <li class="js_slide">4</li>
-                        <li class="js_slide">5</li>
-                        <li class="js_slide">6</li>
-                        <li class="js_slide">7</li>
-                        <li class="js_slide">8</li>
-                        <li class="js_slide">9</li>
-                        <li class="js_slide">10</li>
-                        <li class="js_slide">11</li>
-                        <li class="js_slide">12</li>
-                    </ul>
-                </div>
+            
 
-                
-                <div>
-                  <a class="prevbtn js_prev">
-                    <span class="prev">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#f6fbff" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
-                    </span>
-                  </a>
+            <div class="owl-carousel owl-theme owl-carousel-custom" id="category-2-carousel">
+              
+              <div class="item catdiv">
+                <div class="service-img">
+                  
                 </div>
-                
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
 
-                <div>
-                  <a class="nextbtn js_next">
-                    <span class="next">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#f6fbff" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
-                    </span>
-                  </a>
                 </div>
+              </div>
+
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              <div class="item catdiv">
+                <div class="service-img">
+                  
+                </div>
+              </div>
+              
 
             </div>
 
-          </div>
+            
 
         </div>
       </div>
     </section>
 
     <section id="loryslider2">
-      <div class="container">
-        <div class="row align-items-center">
+      <div class="container sectionbackground">
+        <div class="row align-items-center sectionpaddinglory">
           
           <div class="col-lg-12">
-            <h2 style="margin-bottom: 10px;">Most Viewed</h2>
+            
+            <div class="mostvieweddivheading">
+              <h2>Most Viewed</h2>
+            </div>
+            
 
             <div class="slider js_ease2 ease">
                 <div class="frame js_frame">
                     <ul class="slides js_slides">
-                        <li class="js_slide">1</li>
-                        <li class="js_slide">2</li>
-                        <li class="js_slide">3</li>
-                        <li class="js_slide">4</li>
-                        <li class="js_slide">5</li>
-                        <li class="js_slide">6</li>
-                        <li class="js_slide">7</li>
-                        <li class="js_slide">8</li>
-                        <li class="js_slide">9</li>
-                        <li class="js_slide">10</li>
-                        <li class="js_slide">11</li>
-                        <li class="js_slide">12</li>
+                        <li class="js_slide">
+
+                            <div class="lory-card">
+                              <!-- image -->
+                              <div class="recommend-img">
+                                <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
+                              </div>
+                              
+                              <div class="lorycardproductname">
+                                <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                              </div>
+                              
+                              <div class="lorycardprice">
+                                <h4 class="mb-2 price">$190.56</h4>
+                              </div>
+                              
+                              <!-- add to cart -->
+                              <div class="addtocartdiv">
+                                <a class="addtocartbtn" href="#!">Add to Cart</a>
+                              </div>
+                              
+                            </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/vr-glass.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+                          
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/talador.jpg') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/shoe.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/paint.webp') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/box.webp') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/beanbag.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        <li class="js_slide">
+                          
+                          <div class="lory-card">
+                            <!-- image -->
+                            <div class="recommend-img">
+                              <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
+                            </div>
+                            
+                            <div class="lorycardproductname">
+                              <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                            </div>
+                            
+                            <div class="lorycardprice">
+                              <h4 class="mb-2 price">$190.56</h4>
+                            </div>
+                            
+                            <!-- add to cart -->
+                            <div class="addtocartdiv">
+                              <a class="addtocartbtn" href="#!">Add to Cart</a>
+                            </div>
+                            
+                          </div>
+
+                        </li>
+
+                        
                     </ul>
                 </div>
 
@@ -458,65 +841,129 @@
       </div>
     </section>
 
-
-    <section class="category-section" id="category">
-      <div class="container">
-        <div class="row align-items-center">
+    <section class="favourites-section" id="favourites">
+      <div class="container sectionbackground">
+        <div class="row align-items-center sectionpaddingfavourites">
           
           <div class="col-lg-12">
 
-            <h2 style="margin-bottom: 10px;">Have you seen our services?</h2>
+            <div class="divheading">
+              <h2>Find your favourites</h2>
+            </div>
+            
 
-            <div class="owl-carousel owl-theme owl-carousel-custom" id="category-carousel">
-              <div class="item catdiv">
-                <h4>1</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>2</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>3</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>4</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>5</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>6</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>7</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>8</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>9</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>10</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>11</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>12</h4>
-              </div>
+            <div class="owl-carousel owl-theme owl-carousel-custom" id="favourites-carousel">
+              
+              
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/1.webp') }}" alt="">
+                    </div>
+                  </div>
+                  
+                </div>
 
-              <div class="item catdiv">
-                <h4>13</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>14</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>15</h4>
-              </div>
-              <div class="item catdiv">
-                <h4>16</h4>
-              </div>
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/2.webp') }}" alt="">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/3.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                 
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/4.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/5.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/1.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/2.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/3.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/4.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="item favouritesdiv" style="width:280px">
+                  
+                  <div class="favourites-circle">
+                    <div class="favourites-img">
+                      <img src="{{ asset('home/img/inspiration/5.webp') }}" alt="">
+                    </div>
+                  </div>
+
+
+                </div>
+            
+              
 
             </div>
 
@@ -528,410 +975,399 @@
       </div>
     </section>
 
-    
 
-
-    <section id="basic">
-      <div class="container">
-        <div class="row align-items-center">
+    <section class="services-section" id="services">
+      <div class="container sectionbackground">
+        <div class="row align-items-center sectionpadding">
           
           <div class="col-lg-12">
-            <h2 style="margin-bottom: 10px;">Recommended for you</h2>
-            
-            <div class="carouseller row-fluid for-car"> 
-              <div class="carousel-wrapper"> 
-                <div class="carousel-items"> 
-                  
-                  <div class="span3 carousel-block">
 
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
+            <div class="divheading">
+              <h2>Have you seen our services?</h2>
+            </div>
 
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                      
-                  </div>
-
-                  <div class="span3 carousel-block">
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/paint.webp') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                  </div>
-
-                  <div class="span3 carousel-block">
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/talador.jpg') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                  </div>
-
-                  <div class="span3 carousel-block">
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/box.webp') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                  </div>
-
-                  <div class="span3 carousel-block">
-
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                      
-                  </div>
-
-                  <div class="span3 carousel-block">
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/paint.webp') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                  </div>
-
-                  <div class="span3 carousel-block">
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/talador.jpg') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                  </div>
-
-                  <div class="span3 carousel-block">
-                    <div class="recommend-card">
-                      <!-- image -->
-                      <div class="recommend-img">
-                        <img src="{{ asset('home/img/box.webp') }}" alt="">
-                      </div>
-                      
-                      <div class="cardproductname">
-                        <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
-                      </div>
-                      
-                      <div class="star">
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                        <i class="fa-solid fa-star" style="color: #fa6400;"></i>
-                      </div>
-                      
-                      <div class="cardprice">
-                        <h4 class="mb-2 price">$190.56</h4>
-                      </div>
-                      
-
-                      <div class="collection">
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
-                          <p style="float: left;">Available for Home Delivery</p>
-                        </div>
-
-                        <div class="delivery">
-                          <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
-                          <p style="float: left;">Available for Collect from Store</p>
-                        </div>
-                        
-                      </div>
-      
-                      
-                      <!-- add to cart -->
-                      <div class="addtocartdiv">
-                        <a class="addtocartbtn" href="#!">Add to Cart</a>
-                      </div>
-      
-                      
-                    </div>
-                  </div>
-                  
-
+            <div class="owl-carousel owl-theme owl-carousel-custom" id="services-carousel">
+              
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/1.webp') }}" alt="">
                 </div>
               </div>
-              <div class="carousel-control-block">
-                <div class="carousel-button-left shadow"><a href="javascript:void(0)">‹</a></div> 
-                <div class="carousel-button-right shadow"><a href="javascript:void(0)">›</a></div> 
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/2.webp') }}" alt="">
+                </div>
               </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/3.avif') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/4.webp') }}" alt="">
+                </div>
+              </div>
+
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/1.webp') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/2.webp') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/3.avif') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/4.webp') }}" alt="">
+                </div>
+              </div>
+
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/1.webp') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/2.webp') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/3.avif') }}" alt="">
+                </div>
+              </div>
+              <div class="item servicediv">
+                <div class="service-img">
+                  <img src="{{ asset('home/img/service/4.webp') }}" alt="">
+                </div>
+              </div>
+              
+
+            </div>
+
+            <div class="allbtn">
+              <a href="#"><p>Explore all our services</p></a>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="inspiration-section" id="inspiration">
+      <div class="container sectionbackground">
+        <div class="row align-items-center sectionpaddinginspiration">
+          
+          <div class="col-lg-12">
+
+            <div class="divheading">
+              <h2>Inspiration from our community</h2>
             </div>
             
-          </div>
+
+            <div class="owl-carousel owl-theme owl-carousel-custom" id="inspiration-carousel">
+              
+              
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/1.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/2.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/3.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/4.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/5.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/1.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/2.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/3.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/4.webp') }}" alt="">
+                  </div>
+                </div>
+                <div class="item inspirationdiv" style="width:280px">
+                  <div class="inspiration-img">
+                    <img src="{{ asset('home/img/inspiration/5.webp') }}" alt="">
+                  </div>
+                </div>
+            
+              
+
+            </div>
+
+            <div class="allbtn">
+              <a href="#"><p>Explore all our services</p></a>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="recommended-section" id="recommended">
+      <div class="container sectionbackground">
+        <div class="row align-items-center sectionpadding">
+          
+          <div class="col-lg-12">
+
+            <div class="divheadingrecommened">
+              <h2>Recommended for you</h2>
+            </div>
+
+            <div class="owl-carousel owl-theme owl-carousel-custom" id="recommended-carousel">
+              
+              <div class="recommend-card item recommeneddiv">
+                <!-- image -->
+                <div class="recommend-img">
+                  <img src="{{ asset('home/img/vacmaster.png') }}" alt="">
+                </div>
+                
+                <div class="cardproductname">
+                  <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                </div>
+                
+                <div class="star">
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                </div>
+                
+                <div class="cardprice">
+                  <h4 class="mb-2 price">$190.56</h4>
+                </div>
+                
+
+                <div class="collection">
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
+                    <p style="float: left;">Available for Home Delivery</p>
+                  </div>
+
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
+                    <p style="float: left;">Available for Collect from Store</p>
+                  </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="addtocartdiv">
+                  <a class="addtocartbtn" href="#!">Add to Cart</a>
+                </div>
+
+              </div>
+
+
+
+              <div class="recommend-card item recommeneddiv">
+                <!-- image -->
+                <div class="recommend-img">
+                  <img src="{{ asset('home/img/talador.jpg') }}" alt="">
+                </div>
+                
+                <div class="cardproductname">
+                  <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                </div>
+                
+                <div class="star">
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                </div>
+                
+                <div class="cardprice">
+                  <h4 class="mb-2 price">$190.56</h4>
+                </div>
+                
+
+                <div class="collection">
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
+                    <p style="float: left;">Available for Home Delivery</p>
+                  </div>
+
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
+                    <p style="float: left;">Available for Collect from Store</p>
+                  </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="addtocartdiv">
+                  <a class="addtocartbtn" href="#!">Add to Cart</a>
+                </div>
+
+              </div>
+
+
+              <div class="recommend-card item recommeneddiv">
+                <!-- image -->
+                <div class="recommend-img">
+                  <img src="{{ asset('home/img/paint.webp') }}" alt="">
+                </div>
+                
+                <div class="cardproductname">
+                  <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                </div>
+                
+                <div class="star">
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                </div>
+                
+                <div class="cardprice">
+                  <h4 class="mb-2 price">$190.56</h4>
+                </div>
+                
+
+                <div class="collection">
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
+                    <p style="float: left;">Available for Home Delivery</p>
+                  </div>
+
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
+                    <p style="float: left;">Available for Collect from Store</p>
+                  </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="addtocartdiv">
+                  <a class="addtocartbtn" href="#!">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="recommend-card item recommeneddiv">
+                <!-- image -->
+                <div class="recommend-img">
+                  <img src="{{ asset('home/img/box.webp') }}" alt="">
+                </div>
+                
+                <div class="cardproductname">
+                  <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                </div>
+                
+                <div class="star">
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                </div>
+                
+                <div class="cardprice">
+                  <h4 class="mb-2 price">$190.56</h4>
+                </div>
+                
+
+                <div class="collection">
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
+                    <p style="float: left;">Available for Home Delivery</p>
+                  </div>
+
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
+                    <p style="float: left;">Available for Collect from Store</p>
+                  </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="addtocartdiv">
+                  <a class="addtocartbtn" href="#!">Add to Cart</a>
+                </div>
+
+              </div>
+
+              <div class="recommend-card item recommeneddiv">
+                <!-- image -->
+                <div class="recommend-img">
+                  <img src="{{ asset('home/img/shoe.png') }}" alt="">
+                </div>
+                
+                <div class="cardproductname">
+                  <h6 class="fw-semibold mb-2">Vacmaster L Class 110V 30L Wet and Dry Vacuum Cleaner with Power Take Off & HEPA Filtration</h6>
+                </div>
+                
+                <div class="star">
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                  <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                </div>
+                
+                <div class="cardprice">
+                  <h4 class="mb-2 price">$190.56</h4>
+                </div>
+                
+
+                <div class="collection">
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
+                    <p style="float: left;">Available for Home Delivery</p>
+                  </div>
+
+                  <div class="delivery">
+                    <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
+                    <p style="float: left;">Available for Collect from Store</p>
+                  </div>
+                </div>
+
+                <!-- add to cart -->
+                <div class="addtocartdiv">
+                  <a class="addtocartbtn" href="#!">Add to Cart</a>
+                </div>
+
+              </div>
+
+              
+
+
+            </div>
 
         </div>
       </div>

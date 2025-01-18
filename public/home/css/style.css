@@ -76,6 +76,39 @@ input[type="number"]::-webkit-inner-spin-button {
 	margin-left: 0;
 }
 
+.sectionbackground {
+  background-color: white;
+  overflow: hidden;
+}
+
+.sectionpadding {
+  padding: 20px;
+}
+
+.sectionpaddingtoprating {
+  padding: 20px 0px;
+}
+
+.sectionpaddinglory {
+  padding: 20px 0px;
+}
+
+.sectionpaddinginspiration {
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sectionpaddingfavourites{
+  padding-left: 20px;
+  padding-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
 
 .for-car .carousel-wrapper {
 	background-color: white;
@@ -83,12 +116,152 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 20px;
 }
 
-.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span3 {
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+/*========== start most viewed section ==============*/
+#mostviewed {
+  margin-bottom: 60px;
 }
 
-.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span3:hover {
-	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+.mostvieweddivheading {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+/*========== end most viewed section ==============*/
+
+/*========== start lory section ==============*/
+
+
+
+.lory-card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+}
+
+.lorycardproductname {
+  width: 100%;
+}
+
+.lorycardproductname h6 {
+    text-align: center;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: black;
+    font: 400 16px "Poppins", "sans-serif"
+
+}
+
+.lorycardprice {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+  font: 400 16px "Poppins", "sans-serif"
+}
+
+
+.lory-card {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px inset, rgba(0, 0, 0, 0.4) 0px -2px 1px inset;
+}
+
+.lory-card:hover {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 2px inset, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px inset;
+}
+
+.lory-card .addtocartbtn {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  font-family: GoodHome;
+  font-size: 19px;
+}
+
+/*========== end lory section ==============*/
+
+/*========== start favourites section ==============*/
+#favourites {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.divheading {
+  margin-bottom: 30px;
+}
+
+#favourites h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+.owl-carousel .favouritesdiv {
+  height: 280px; /* Match the parent height */
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Optional: Background for demonstration */
+  border-radius: 10px;
+}
+
+.favourites-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.favourites-img {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	margin-inline: auto;
+}
+
+.favourites-section .owl-carousel .owl-nav {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.favourites-section .owl-carousel .owl-nav button.owl-next:focus,
+.favourites-section .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.favourites-section .owl-carousel .owl-nav button.owl-next,
+.favourites-section .owl-carousel .owl-nav button.owl-prev {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #323c41;
+}
+
+.favourites-section .owl-carousel .owl-nav button.owl-next:hover,
+.favourites-section .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #ff6600;
+}
+.favourites-section .owl-carousel .owl-nav button.owl-next span,
+.favourites-section .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+
+/*========== end favourites section ==============*/
+
+/*========== start service section ==============*/
+
+
+#services h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
 }
 
 /* Set the width and height of the carousel */
@@ -100,32 +273,32 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Adjust the items within the carousel */
 .owl-carousel .catdiv {
+  height: 422px; /* Match the parent height */
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Optional: Background for demonstration */
+}
+
+.owl-carousel .servicediv {
   height: 300px; /* Match the parent height */
   justify-content: center;
   align-items: center;
-  background-color: grey; /* Optional: Background for demonstration */
+  background-color: white; /* Optional: Background for demonstration */
 }
 
-#category {
-	margin-bottom: 20px;
-	background-color: white;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.category-section .owl-carousel .owl-nav {
+.services-section .owl-carousel .owl-nav {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 
-.category-section .owl-carousel .owl-nav button.owl-next:focus,
-.category-section .owl-carousel .owl-nav button.owl-prev:focus {
+.services-section .owl-carousel .owl-nav button.owl-next:focus,
+.services-section .owl-carousel .owl-nav button.owl-prev:focus {
   outline: none;
 }
 
-.category-section .owl-carousel .owl-nav button.owl-next,
-.category-section .owl-carousel .owl-nav button.owl-prev {
+.services-section .owl-carousel .owl-nav button.owl-next,
+.services-section .owl-carousel .owl-nav button.owl-prev {
   height: 40px;
   width: 40px;
   display: inline-block;
@@ -136,16 +309,122 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #323c41;
 }
 
-.category-section .owl-carousel .owl-nav button.owl-next:hover,
-.category-section .owl-carousel .owl-nav button.owl-prev:hover {
+.services-section .owl-carousel .owl-nav button.owl-next:hover,
+.services-section .owl-carousel .owl-nav button.owl-prev:hover {
   background-color: #ff6600;
 }
-.category-section .owl-carousel .owl-nav button.owl-next span,
-.category-section .owl-carousel .owl-nav button.owl-prev span {
+.services-section .owl-carousel .owl-nav button.owl-next span,
+.services-section .owl-carousel .owl-nav button.owl-prev span {
   font-size: 40px;
   margin-top: -13px;
   display: block;
 }
+/*========== end service section ==============*/
+
+/*========== start inspiration section ==============*/
+
+#inspiration {
+	padding-top: 20px;
+}
+
+#inspiration h2 {
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+
+
+.owl-carousel .inspirationdiv {
+  height: 280px; /* Match the parent height */
+  justify-content: center;
+  align-items: center;
+  background-color: grey; /* Optional: Background for demonstration */
+  border-radius: 10px;
+}
+
+.inspiration-img {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	margin-inline: auto;
+}
+
+.inspiration-section .owl-carousel .owl-nav {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.inspiration-section .owl-carousel .owl-nav button.owl-next:focus,
+.inspiration-section .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.inspiration-section .owl-carousel .owl-nav button.owl-next,
+.inspiration-section .owl-carousel .owl-nav button.owl-prev {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #323c41;
+}
+
+.inspiration-section .owl-carousel .owl-nav button.owl-next:hover,
+.inspiration-section .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #ff6600;
+}
+.inspiration-section .owl-carousel .owl-nav button.owl-next span,
+.inspiration-section .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+
+/*========== end inspiration section ==============*/
+
+/*========== start recommended section ==============*/
+
+.divheadingrecommened {
+  margin-bottom: 15px;
+}
+
+.recommended-section .owl-carousel .owl-nav {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.recommended-section .owl-carousel .owl-nav button.owl-next:focus,
+.recommended-section .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.recommended-section .owl-carousel .owl-nav button.owl-next,
+.recommended-section .owl-carousel .owl-nav button.owl-prev {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #323c41;
+}
+
+.recommended-section .owl-carousel .owl-nav button.owl-next:hover,
+.recommended-section .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #ff6600;
+}
+.recommended-section .owl-carousel .owl-nav button.owl-next span,
+.recommended-section .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+
+/*========== end recommended section ==============*/
 
 .allbtn {
 	background-color: #323c41;
@@ -160,6 +439,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .allbtn:hover {
 	background-color: #ff6600;
+}
+
+.service-img {
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+	margin-inline: auto;
 }
 
 
@@ -411,7 +697,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* ##### hero ##### */
 #hero {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #hero img {
   width: 100%;
@@ -486,11 +772,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-#basic {
+#recommended {
 	margin-top: 20px;
-	background-color: white;
-	padding-bottom: 20px;
-	padding-top: 20px;
 }
 
 .carousel-block { 
@@ -514,14 +797,22 @@ input[type="number"]::-webkit-inner-spin-button {
 	padding: 8px;
 	font-family: GoodHome;
 	font-size: 19px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
+
+.addtocartbtn:hover {
+	color: white;
+}
+
 
 .collection {
   margin-bottom: 10px;
   font-size: 14px;
 }
 .collection p {
-  font-size: 11px;
+  font-size: 12px;
   color: black;
 }
 .delivery {
@@ -547,6 +838,17 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 12px;
 }
 
+.recommeneddiv {
+	height: 587px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px inset, rgba(0, 0, 0, 0.4) 0px -2px 1px inset;
+}
+
+.recommeneddiv:hover {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 2px inset, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px inset;
+}
+
+
+
 .recommend-card {
   width: 100%;
   padding-left: 15px;
@@ -559,10 +861,12 @@ input[type="number"]::-webkit-inner-spin-button {
 	margin-bottom: 20px;
 	margin-top: 10px;
 	margin-inline: auto;
+  padding-top: 10px;
 }
 
 .recommend-img img {
 	width: 100%;
+  overflow: hidden;
 }
 
 .cardproductname {
@@ -596,6 +900,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
 #product img {
   width: 100%;
+}
+
+.toprateddivheading {
+  margin-bottom: 15px;
+  margin-left: 25px;
 }
 
 .btn-md {
@@ -675,9 +984,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #49b4f5;
 }
 
-#mostviewed {
-  margin-bottom: 60px;
-}
+
 
 /* ##### flash sale ##### */
 #sale {

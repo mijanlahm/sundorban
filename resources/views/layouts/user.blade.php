@@ -57,9 +57,6 @@
 
       <!-- ===== lory carousel ===== -->
       <link rel="stylesheet" href="{{ asset('home/css/Multiple/lory.css') }}">
-
-      <!-- ===== basic carousel ===== -->
-      <link rel="stylesheet" href="{{ asset('home/css/basic/carouseller.css') }}">
       
 
     <!-- main stylesheet -->
@@ -308,16 +305,8 @@
     <script src="{{ asset('home/js/Multiple/lory.min.js') }}"></script>
     <script src="{{ asset('home/js/Multiple/jquery.lory.min.js') }}"></script>
 
-    <!-- ===== basic carousel js ===== -->
-    <script src="{{ asset('home/js/basic/carouseller.min.js') }}"></script>
-    <script src="{{ asset('home/js/basic/jquery.easing.1.3.js') }}"></script>
 
 
-
-
-    
-
-    
     <!-- Document Ready Script -->
     <script src="{{ asset('home/js/document_ready.js') }}"></script>
 
