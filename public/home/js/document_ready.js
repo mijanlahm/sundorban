@@ -1,8 +1,24 @@
 /*=================================
-      nav
+      mega menu
   =================================*/
- 
-
+  $(document).ready(function () {
+    $('.navbar-toggler-mega').click(function () {
+      $('.navbar-collapse-mega').slideToggle(300);
+    });
+  
+    smallScreenMenu();
+    let temp;
+  
+    function resizeEnd() {
+      smallScreenMenu();
+    }
+  
+    $(window).resize(function () {
+      clearTimeout(temp);
+      temp = setTimeout(resizeEnd, 100);
+      resetMenu();
+    });
+  });
 
 /*=================================
       related product Carousel

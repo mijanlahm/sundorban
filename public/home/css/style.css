@@ -57,8 +57,108 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* ##### mijan add ##### */
+#slider {
+  z-index: 5;
+}
+.logo-title {
+  margin-left: 30px;
+}
+
+.sub-menu-item h4 {
+  color: black;
+}
+
+.sub-menu ul li a {
+  color: black;
+}
+
+.sub-menu p {
+  color: black;
+}
+
+.sub-menu p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.sublogin {
+  width: 150px;
+  margin-bottom: 5px;
+}
+
+/*========== test =======*/
 
 
+
+/*===== search bar =======*/
+
+
+
+
+.navbar-nav-mega > li:hover .sub-menu {
+	grid-template-columns: repeat(2, 1fr);
+	padding: 1rem 2rem;
+  z-index: 2500;
+}
+
+.sub-menu {
+	position: absolute;
+	left: 50%;
+	width: 35%;
+	top: 100%;
+	background: white;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-wrapper {
+  z-index: 2500;
+}
+
+.cartsfa {
+	font-size: 20px;
+	margin-right: 10px;
+  color: goldenrod;
+}
+
+.nav-item {
+  color: white;
+}
+
+
+/*====== end search bar =========*/
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
 
 
 
@@ -506,12 +606,18 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* ##### header ##### */
+.stickybar {
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Distance from the top */
+  color: white;
+  z-index: 2000; /* Ensures it stays above other elements */
+}
+
+
 #header {
-  z-index: 99;
-  padding: 26px 6px;
-  position: relative;
-  background: white;
-  box-shadow: 0 2px 10px hsla(204, 88%, 53%, 0.8);
+  padding: 10px 6px;
+  background: #131921;
+  z-index: 2500;
 }
 
 .logo {
@@ -524,45 +630,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 2px;
 }
 
-/* search */
-.search-bar-wrap {
-  width: 45%;
-}
-
-.search-bar {
-  padding: 8px 18px;
-  position: relative;
-  border-radius: 8px;
-  background: #eff4fd;
-}
-
-.search-bar input {
-  border: 0;
-  font-size: 14px;
-  padding-left: 26px;
-  background: transparent;
-}
-
-.search-bar input:focus-visible {
-  outline: 0;
-}
-
-.search-icon {
-  top: 50%;
-  margin-top: 1px;
-  font-size: 14px;
-  position: absolute;
-  transform: translateY(-50%);
-}
 
 /* cart btn */
 
-.cart-btn {
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 4px;
-  background: #fdb985;
-}
+
 
 .btn-sm {
   color: #fff;
@@ -573,17 +644,24 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* cart */
+
+.facolor {
+	color: black;
+}
+
+
 .cart-wrap {
   top: 56px;
-  right: 0;
+  right: 21px;
   width: 420px;
   padding: 28px;
   display: none;
   min-height: 100px;
   position: absolute;
   background: #fff;
+  color: black;
   border-radius: 10px;
-  box-shadow: var(--shadow);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .cart-wrap.show {
@@ -650,12 +728,23 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+
+/*======== test =======*/
+
+/*===================
+mega menu
+======================*/
+
+.sub-menu ul li {
+  color: black;
+}
+
 /* ##### navbar ##### */
 
 
-.navbar {
+.navbar{
   padding: 5px 10px;
-  background: #6aa6ff;
+  background: #232f3e;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -667,8 +756,17 @@ input[type="number"]::-webkit-inner-spin-button {
 	color: #fff;
 }
 
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
 
 
+@media all and (max-width: 991.9px) {
+  #header{
+        display: none;
+    }
+   
+}
 
 /* ##### hero ##### */
 #hero {

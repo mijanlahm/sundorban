@@ -52,7 +52,11 @@
 
       <!-- ===== lory carousel ===== -->
       <link rel="stylesheet" href="{{ asset('home/css/Multiple/lory.css') }}">
+    
       
+    <!-- mega menu stylesheet -->  
+    <link rel="stylesheet" href="{{ asset('home/css/megamenu/megamenustyle.css') }}"> 
+
     <!-- nav stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('home/css/nav/bootstrap-5-navbar.css') }}">
@@ -68,45 +72,181 @@
   </head>
 
   <body>
-    <!-- header -->
-    <header id="header">
-      <div class="container">
-        <div class="flex justify-content-between align-items-center position-relative">
-          <!-- logo -->
-          <div>
-            <a class="logo" href="#!">
-              <img src="{{ asset('home/img/logo.svg') }}" alt="">
-              <span>QuickCart</span>
-            </a>
-          </div>
+    
+   
 
-          <!-- search -->
-        
-        <div class="search-bar-wrap d-none d-md-block">
-            @livewire('product-search-component')
+    <div class = "main-wrapper stickybar">
+      <nav class = "megamenu">
+        <div class = "brand-and-icon">
+          <a class="logo" href="#!">
+            <img src="{{ asset('home/img/logo.svg') }}" alt="">
+            <span>QuickCart</span>
+          </a>
         </div>
 
-          <!-- cta buttons -->
+        <div class="search-bar flex-grow-1 mx-4">
+          <input type="text" class="form-control" placeholder="Search...">
+        </div>
+
+        <div class = "navbar-collapse-mega">
+          <ul class = "navbar-nav-mega">
+
+            <li>
+              <a href = "#" class = "menu-link">
+                Language
+                <span class = "drop-icon">
+                  <i class = "fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <div class = "sub-menu">
+                <!-- item -->
+                
+                <!-- end of item -->
+                <!-- item -->
+                <div class = "sub-menu-item">
+                  <h4>Languages</h4>
+                  <ul>
+                    <li><a href = "#">English</a></li>
+                    <li><a href = "#">Spanish</a></li>
+                    <li><a href = "#">Bengali</a></li>
+                    <li><a href = "#">Catalan</a></li>
+                    <li><a href = "#">Frence</a></li>
+                  </ul>
+                </div>
+                <!-- end of item -->
+              </div>
+            </li>
+
+            <li>
+              <a href = "#" class = "menu-link">
+                Log in & Account
+                <span class = "drop-icon">
+                  <i class = "fas fa-chevron-down"></i>
+                </span>
+              </a>
+              <div class = "sub-menu">
+                <!-- item -->
+                <!-- end of item -->
+                <!-- item -->
+                <div class = "sub-menu-item">
+                  <h4>Your Account</h4>
+                  <ul>
+                    <li><a href = "#">Account</a></li>
+                    <li><a href = "#">Order</a></li>
+                    <li><a href = "#">Watchlist</a></li>
+                    <li><a href = "#">Recommendations</a></li>
+                    <li><a href = "#">Browsing History</a></li>
+                  </ul>
+                </div>
+                <!-- end of item -->
+                <!-- item -->
+                <div class = "sub-menu-item">
+                  <button type ="button" class ="btn btn-warning sublogin">Log In</button>
+                  <P>New Customer? <a href="">Start Here</a></P>
+                </div>
+                <!-- end of item -->
+              </div>
+            </li>
+
+            <li>
+              <a href = "#">Returns & Orders</a>
+            </li>
+
+            <li>
+              <!-- cta buttons -->
           <div class="flex align-items-center gap-3">
             <a href="#!" class="cart-btn">
               <i class="fas fa-cart-plus"> </i>
+              Carts
             </a>
 
-            <a href="#!" class="btn-sm d-none d-sm-inline">
-              Sign In
-            </a>
+            
           </div>
 
           <!-- cart -->
+          
+          
           <div class="cart-wrap">
             <h6 class="cart-title">Cart</h6>
 
             <!-- cart item -->
-            @livewire('cart-component')
+            <div class="flex align-items-center justify-content-between flex-wrap gap-3 mb-4">
+              <!-- item -->
+              <div class="cart-item flex align-items-center flex-wrap gap-3">
+
+                <p>Item Name</p>
+
+                <!-- item count -->
+                <div class="item-count-wrap">
+                  <input class="cart-item-count" type="number" value="1">
+
+                  <a href="#!" class="item-plus">
+                    <i class="fas fa-plus"></i>
+                  </a>
+
+                  <a href="#!" class="item-minus">
+                    <i class="fas fas fa-minus"></i>
+                  </a>
+                </div>
+
+                <p>x $190.80</p>
+
+              </div>
+
+              <!-- delete button -->
+              <div>
+                <a class="item-delete-btn" href="#!">
+                  <i class="fas fa-trash-alt facolor"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- cart item -->
+            <div class="flex align-items-center justify-content-between flex-wrap gap-3 mb-5">
+              <!-- item -->
+              <div class="cart-item flex align-items-center flex-wrap gap-3">
+
+                <p>Item Name</p>
+
+                <!-- item count -->
+                <div class="item-count-wrap">
+                  <input class="cart-item-count" type="number" value="1">
+
+                  <a href="#!" class="item-plus">
+                    <i class="fas fa-plus"></i>
+                  </a>
+
+                  <a href="#!" class="item-minus">
+                    <i class="fas fas fa-minus"></i>
+                  </a>
+                </div>
+
+                <p>x $190.80</p>
+
+              </div>
+
+              <!-- delete button -->
+              <div>
+                <a class="item-delete-btn" href="#!">
+                  <i class="fas fa-trash-alt facolor"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- total -->
+            <div
+              class="flex align-items-center justify-content-between gap-4 fw-semibold border-top border-2 border-dark pt-2">
+              <p>Total</p>
+              <p>$380</p>
+            </div>
           </div>
+
+              
+            </li>
+          </ul>
         </div>
-      </div>
-    </header>
+      </nav>
+    </div>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-light navbar-hoverable">
@@ -332,9 +472,15 @@
     <!-- ===== Jquery js ===== -->
     
 
+    <!-- ===== mega menu js ===== -->
+    <script src="{{ asset('home/js/megamenu/script.js') }}"></script>
+
+
     <!-- ===== menu js ===== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="{{ asset('home/js/nav/bootstrap-5-navbar.js') }}"></script>
+
+    <script src="{{ asset('home/js/app.js') }}"></script>
     
 
     
