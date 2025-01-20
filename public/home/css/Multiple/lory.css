@@ -209,7 +209,8 @@
     }
 
      .multipleelements li, .multislides li, .ease li {
-        width: 350px;
+        width: 330px;
+        height: 500px;
         margin-right: 20px;
     }
 

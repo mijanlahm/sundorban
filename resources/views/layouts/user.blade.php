@@ -12,12 +12,7 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/darkly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/darkly/bootstrap.min.css"> 
     <!-- ===================
                start Slier  
          =================== -->
@@ -58,9 +53,14 @@
       <!-- ===== lory carousel ===== -->
       <link rel="stylesheet" href="{{ asset('home/css/Multiple/lory.css') }}">
       
-
+    <!-- nav stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('home/css/nav/bootstrap-5-navbar.css') }}">
+    
     <!-- main stylesheet -->
     <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
+
+  
 
 
     <!-- title -->
@@ -109,80 +109,129 @@
     </header>
 
     <!-- navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navlinks">
-          <li>
-            <a href="#!">Trending</a>
-          </li>
-          <li class="position-relative">
-            <!-- dropdown toggler -->
-            <a class="dropdown-btn" href="#!">
-              <span>Categories</span>
-              <i class="fa-solid fa-angle-down"></i>
-            </a>
+    <nav class="navbar navbar-expand-md navbar-light navbar-hoverable">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" 
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Category
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item dropdown-toggle" href="javascript:alert('submenu')">Submenu</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                              <li><a class="dropdown-item" href="#">Another submenu action</a></li>
 
-            <!-- dropdown links -->
-            <ul class="dropdown-links">
-              <li>
-                <a href="#!">Accessories</a>
-              </li>
-              <li>
-                <a href="#!">Beauty</a>
-              </li>
-              <li>
-                <a href="#!">Electronics</a>
-              </li>
-              <li>
-                <a href="#!">Fashion</a>
-              </li>
-              <li>
-                <a href="#!">Kids</a>
-              </li>
-              <li>
-                <a href="#!">Shoes</a>
-              </li>
-              <li>
-                <a href="#!">Sports</a>
-              </li>
-              <li>
-                <a href="#!">Watches</a>
-              </li>
-            </ul>
-          </li>
 
-          <li>
-            <a href="#!">Discounts</a>
-          </li>
-          <li>
-            <a href="#!">Gift Collections</a>
-          </li>
-          <li>
-            <a href="#!">Stores</a>
-          </li>
-        </ul>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action aa</a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action bb</a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu action 2</a></li>
+                              <li><a class="dropdown-item" href="#">Another submenu action 2</a></li>
 
-        <!-- mobile search bar -->
-        <div class="search-bar-wrap d-block d-md-none">
-          <form action="" method="">
-            <div class="search-bar">
-              <input type="text" name="query" placeholder="Search Product..." required>
-              <div class="search-icon">
-                <i class="fas fa-search"></i>
-              </div>
-            </div>
-          </form>
-        </div>
 
-        <!-- nav toggler -->
-        <div class="nav-toggler d-block d-md-none">
-          <a href="#!">
-            <i class="fas fa-bars"></i>
-          </a>
-        </div>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action 1 3</a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action 2 3</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu 3</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action 3 </a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action 3</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" 
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item dropdown-toggle" href="javascript:alert('submenu')">Submenu</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                              <li><a class="dropdown-item" href="#">Another submenu action</a></li>
+
+
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action aa</a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action bb</a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <li><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Submenu action 2</a></li>
+                              <li><a class="dropdown-item" href="#">Another submenu action 2</a></li>
+
+
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action 1 3</a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action 2 3</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu 3</a>
+                                  <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Subsubmenu action 3 </a></li>
+                                      <li><a class="dropdown-item" href="#">Another subsubmenu action 3</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
       </div>
-    </nav>
-
+  </nav>
     <!-- breadcrumb -->
      <!-- <div class="container">
       <div class="row">
@@ -276,22 +325,17 @@
       </div>
     </footer>
 
-  
-    <!-- bootstrap javaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"></script>
-
-    
 
     <!-- jquery Library -->
     <script src="{{ asset('home/js/jquery.min.js') }}"></script>
     <!-- ===== Jquery js ===== -->
-    <script src="{{ asset('home/js/owl/jquery-3.6.0.min.js') }}"></script>
+    
+
+    <!-- ===== menu js ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="{{ asset('home/js/nav/bootstrap-5-navbar.js') }}"></script>
+    
 
     
 

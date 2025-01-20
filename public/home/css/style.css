@@ -58,22 +58,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* ##### mijan add ##### */
 
-.container {
-	width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-	margin-right: 20px;
-	margin-left: 20px;
-}
+
+
+
 
 .container-fluid {
-	width: 100%;
-	padding-right: 0;
-	padding-left: 0;
-	margin-right: 0;
-	margin-left: 0;
+	padding-right: 20px;
+	padding-left: 20px;
 }
 
 .sectionbackground {
@@ -116,6 +107,66 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 20px;
 }
 
+
+
+/*========== start category-1 section ==============*/
+#category-1 {
+  margin-top: 20px;
+}
+
+#category-2 {
+  margin-top: 20px;
+}
+
+.catcontainer {
+  padding: 15px;
+  height: 100%;
+}
+
+.catname {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.catcontent1 {
+  height: 40%;
+}
+
+.catcontent2 {
+  height: 40%;
+}
+
+.seemore {
+  height: 10%;
+}
+
+.subcat1 {
+  width: 48%;
+  float: left;
+  height: 130px;
+}
+
+.subcat2 {
+  overflow: hidden;
+  width: 48%;
+  float: right;
+  height: 130px;
+}
+
+.catimage {
+  width: 100%;
+  height: 80%;
+}
+
+.catimage img {
+  width: 100%;
+  height: 100%;
+}
+
+/*========== end category-1  section ==============*/
 
 /*========== start most viewed section ==============*/
 #mostviewed {
@@ -600,99 +651,23 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /* ##### navbar ##### */
+
+
 .navbar {
-  padding: 22px 0;
+  padding: 5px 10px;
   background: #6aa6ff;
 }
 
-.navbar .container {
-  z-index: 89;
-  position: relative;
+.dropdown-item:focus, .dropdown-item:hover {
+	color: white;
+	background-color: #007bff;
 }
 
-.navlinks {
-  gap: 28px;
-  width: 100%;
-  display: flex;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  align-items: center;
-  justify-content: center;
-}
-
-/* dropdown links */
-.dropdown-links {
-  left: 0;
-  top: 34px;
-  gap: 12px;
-  display: none;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 24px 32px;
-  position: absolute;
-  background: #fff;
-  border-radius: 6px;
-  flex-direction: column;
-  color: var(--txt-primary);
-  box-shadow: var(--shadow);
-}
-
-.dropdown-links.show {
-  display: flex;
-}
-
-/* nav toggler */
-.nav-toggler {
-  color: #fff;
-  font-size: 26px;
-}
-
-/* responsive */
-@media all and (max-width: 767.9px) {
-  .navlinks {
-    top: 48px;
-    right: 12px;
-    width: 200px;
-    display: none;
-    padding: 32px;
-    font-size: 17px;
-    font-weight: 500;
-    background: #fff;
-    border-radius: 8px;
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-start;
-    color: var(--txt-primary);
-    box-shadow: var(--shadow);
-  }
-
-  .navlinks.show {
-    display: flex;
-  }
-
-  .search-bar-wrap {
-    width: 75%;
-  }
-
-  .dropdown-links {
-    top: 12px;
-    padding: 0;
-    box-shadow: none;
-    border-radius: 0;
-    padding-left: 16px;
-    position: relative;
-    background: transparent;
-    border-left: 2px solid gray;
-  }
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	color: #fff;
 }
 
 
-@media (min-width: 1365px) {
-  .container {
-    max-width: 1310px;
-  }
-}
 
 
 /* ##### hero ##### */
