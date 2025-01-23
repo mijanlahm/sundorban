@@ -52,6 +52,10 @@
 
       <!-- ===== lory carousel ===== -->
       <link rel="stylesheet" href="{{ asset('home/css/Multiple/lory.css') }}">
+
+      <!-- ===== start xzoom ===== -->
+      <link rel="stylesheet" href="{{ asset('home/css/xzoom/xzoom.min.css') }}">
+      <!-- ===== end xzoom ===== -->
     
       
     <!-- mega menu stylesheet -->  
@@ -257,7 +261,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
               <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="{{ route('home') }}"">Home</a>
               </li>
               
               <li class="nav-item dropdown">
@@ -495,7 +499,8 @@
     <script src="{{ asset('home/js/Multiple/lory.min.js') }}"></script>
     <script src="{{ asset('home/js/Multiple/jquery.lory.min.js') }}"></script>
 
-
+    <!-- ===== xzoom js ===== -->
+    <script src="{{ asset('home/js/xzoom/xzoom.min.js') }}"></script>
 
     <!-- Document Ready Script -->
     <script src="{{ asset('home/js/document_ready.js') }}"></script>

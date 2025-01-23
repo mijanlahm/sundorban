@@ -34,6 +34,10 @@ class Product extends Model
         return $this->belongsTo(SubCategory::class);
     }
 
+    public function subcategoryid(){
+        return $this->belongsTo(SubCategory::class,'subcategory_id');
+    }
+
     public function store(){
         return $this->belongsTo(Store::class);
     }
@@ -44,5 +48,14 @@ class Product extends Model
 
     public function product_images(){
         return $this->hasMany(ProductImage::class);
+    }
+
+    public function productImages(){
+        return $this->hasMany(ProductImage::class, 'product_id');
+    }
+
+    public function firstImage()
+    {
+        return $this->productImages()->first(); // Fetch the first image
     }
 }

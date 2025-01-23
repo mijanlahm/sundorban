@@ -396,3 +396,14 @@ $( document ).ready( function() {
       }
     })
   })
+
+/*=================================
+      xzoom
+  =================================*/
+
+  $(document).ready(function () {
+    $('.xzoom, .xzoom-gallery').xzoom({
+        tint: '#333',
+        Xoffset: 15
+    });
+});

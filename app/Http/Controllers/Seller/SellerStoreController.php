@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Store;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Validation\Rule;
 
 class SellerStoreController extends Controller
 {
@@ -45,10 +46,11 @@ class SellerStoreController extends Controller
     public function update_vendor_store(Request $request, $id){
         $store = Store::find($id);
         $request->validate([
-            'store_name' => 'required|unique:stores|max:100',
-            'slug' => 'required|unique:stores',
+            'store_name' => ['required', 'string', 'max:100', Rule::unique('stores', 'store_name')->ignore($store->id)],
+            'slug' => ['required','string', Rule::unique('stores', 'slug')->ignore($store->id),],
             'details' => 'required',
         ]);
+        
 
         $store->update([
             'store_name' => $request->store_name,

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('stores', function (Blueprint $table) {
             $table->id();
             $table->string('store_name');
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->longText('details');
             $table->unsignedBigInteger('user_id');
             $table->timestamps();

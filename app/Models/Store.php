@@ -12,4 +12,10 @@ class Store extends Model
         'details',
         'user_id'
     ];
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
 }

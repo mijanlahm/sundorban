@@ -95,6 +95,7 @@ class SellerProductController extends Controller
             'discounted_price' => 'nullable|numeric|min:0',
             'tax_rate' => 'required|numeric|min:0|max:100',
             'stock_quantity' => 'required|integer|min:0',
+            'slug' => ['required','string', Rule::unique('products', 'slug')->ignore($product->id),],
             'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ]);
 

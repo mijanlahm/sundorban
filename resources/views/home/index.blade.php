@@ -198,9 +198,10 @@
           <div class="row align-items-center">
             <div class="col-lg-7">
               <div class="card-lg mb-4 mb-lg-0">
-                <h2>{{ $discount_percentage }}%</h2>
-                <h4>{{ $homepagesetting->discount_heading }}</h4>
-                <p>{{ $homepagesetting->discount_sub_heading }}</p>
+                <h2>{{ $discount_percentage ?? '0' }}%</h2>
+                <h4>{{ $homepagesetting->discount_heading ?? 'Default Discount Heading' }}</h4>
+                <p>{{ $homepagesetting->discount_sub_heading ?? 'Default Discount Subheading' }}</p>
+
 
                 <div class="float-item">
                   <img src="{{ asset('home/img/shoe.png') }}" alt="">
@@ -216,15 +217,15 @@
                 </div>
 
                 <div>
-                  <h2>{{ $homepagesetting->featuredProduct1->product_name }}</h2>
-                  <p>${{ $homepagesetting->featuredProduct1->regular_price }}</p>
+                  <h2>{{ $homepagesetting->featuredProduct1->product_name ?? 'Default Product Name' }}</h2>
+                        <p>${{ $homepagesetting->featuredProduct1->regular_price ?? '0.00' }}</p>
                 </div>
               </div>
 
               <div class="card-sm sky">
                 <div>
-                  <h2>{{ $homepagesetting->featuredProduct2->product_name }}</h2>
-                  <p>${{ $homepagesetting->featuredProduct2->regular_price }}</p>
+                  <h2>{{ $homepagesetting->featuredProduct2->product_name ?? 'Default Product Name' }}</h2>
+                  <p>${{ $homepagesetting->featuredProduct2->regular_price ?? '0.00' }}</p>
                 </div>
 
                 <!-- product image -->
@@ -258,10 +259,10 @@
                   
                   <div class="subcat1">
                     <div class="catimage">
-                      <img src="{{ asset('home/img/category/Screenshot_11.png') }}" alt="">
+                      <img src="{{ asset('home/img/ex4880-large.jpg') }}" alt="">
                     </div>
                     <div class="catname">
-                      <a href="#">Laptop</a>
+                      <a href="{{ route('microwave') }}">Microwave</a>
                     </div>
                   </div>
 
@@ -283,7 +284,7 @@
                       <img src="{{ asset('home/img/category/Screenshot_13.png') }}" alt="">
                     </div>
                     <div class="catname">
-                      <a href="">Mobile</a>
+                      <a href="#">Mobile</a>
                     </div>
                   </div>
 
@@ -339,7 +340,7 @@
                       <img src="{{ asset('home/img/category/mobile.jpg') }}" alt="">
                     </div>
                     <div class="catname">
-                      <a href="">Mobile</a>
+                      <a href="{{ route('mobile') }}">Mobile</a>
                     </div>
                   </div>
 

@@ -7,9 +7,11 @@ use App\Http\Controllers\admin\ProductController;
 use App\Http\Controllers\admin\ProductDiscountController;
 use App\Http\Controllers\admin\SubCategoryController;
 use App\Http\Controllers\Customer\CustomerMainController;
+use App\Http\Controllers\HomepageCategoryController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\MasterCategoryController;
 use App\Http\Controllers\MasterSubCategoryController;
+use App\Http\Controllers\ProductHomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Seller\SellerMainController;
 use App\Http\Controllers\Seller\SellerProductController;
@@ -23,8 +25,27 @@ Route::get('/homeforlogin', function () {
 
 
 Route::controller(HomePageController::class)->group(function () {
+    
     Route::get('/', 'index')->name('home');
+
 });
+
+Route::controller(ProductHomeController::class)->group(function () {
+    
+    Route::get('/Microwave', 'show_microwave')->name('microwave');
+    Route::get('/product/{slug}', 'product_show')->name('product.show');
+});
+
+Route::controller(HomepageCategoryController::class)->group(function () {
+    
+    Route::get('/Microwave', 'show_microwave')->name('microwave');
+    Route::get('/Mobile', 'show_mobile')->name('mobile');
+
+});
+
+
+
+
 
 
 
