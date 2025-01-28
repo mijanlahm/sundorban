@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Models\Carts;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -28,6 +29,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+
         $authUserRole = Auth::user()->role;
         if($authUserRole == 0){
             return redirect()->intended(route('admin', absolute: false));
@@ -36,7 +38,9 @@ class AuthenticatedSessionController extends Controller
         }else{
             return redirect()->intended(route('customer', absolute: false));
         }
+
     }
+
 
     /**
      * Destroy an authenticated session.
@@ -51,4 +55,5 @@ class AuthenticatedSessionController extends Controller
 
         return redirect('/');
     }
+
 }

@@ -12,14 +12,14 @@
 
   
     <!-- details card -->
-    <section>
+    <section class="detailsproducts-section">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="details-card">
               <div class="row align-items-center">
                 <!-- slider -->
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="col-lg-6 col-md-12 col-sm-12  mb-5 mb-lg-0">
                   
                 
                         <div class="xzoom-container">
@@ -41,82 +41,101 @@
 
                 </div>
 
+
+
                 <!-- details text -->
                 <div class="col-lg-6">
-                  <h1 class="fw-bold mb-4">{{ $product->product_name }}</h1>
 
-                  <!-- ratings & shop name -->
-                  <div class="flex flex-wrap align-items-center gap-3 mb-4">
-                    <div class="stars-wrap">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
+
+                <livewire:product-quantity :product-id="$product->id" />
+
+                @if(session('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
                     </div>
+                @endif
 
-                    <p class="border-start border-end border-secondary border-3 px-3 fw-semibold">
-                      <span class="text-secondary">By - </span>
-                      {{ $product->store->store_name ?? 'No store available' }}
-                    </p>
 
-                    <p class="fw-semibold">
-                      <span class="text-secondary">SKU:</span>
-                      {{ $product->sku }}
-                    </p>
-                  </div>
-
-                  <!-- price -->
-                  <div class="flex flex-wrap align-items-center gap-3 mb-4">
-                    <h2 class="price">${{ $product->discounted_price  }}</h2>
-                    <p class="line-through">${{ $product->regular_price }}</p>
-                  </div>
-
-                  <!-- add to cart -->
-                  <div class="proaddtocart">
-                    
-                    <div class="proquatitybtn">
-                      <h5>Quantity</h5>
-                      <div class="qntydiv">
-                        @livewire('counter')
-                      </div>
-                      
-                    </div>
-                    
-                    <div class="d-grid gap-2 col-6 mx-auto proaddtocartbtn">
-                      <button class="btn btn-primary" type="button"><h4>Add to Cart</h4></button>
-                    </div>
-
-                  </div>
-              
-
-                  <!-- payment -->
-                  <div
-                    class="flex flex-wrap flex-sm-nowrap gap-3 border border-2 border-dark-subtle rounded py-4 px-3 mb-4">
-                    <i class="fa-solid fa-credit-card mt-1 fs-3"></i>
-                    <p style="text-wrap: auto;"><span class="fw-bold">Payment:</span> Payment upon receipt of goods,
-                      Payment by card in the department, Google Pay, Online card, -5% discount in case of payment</p>
-                  </div>
-
-                  <!-- buttons -->
-                  <div class="flex flex-wrap align-items-center gap-3">
-                    <a class="btn-outline" href="#!">
-                      <i class="fa-solid fa-heart"></i>
-                      <span>Add To Favourite</span>
-                    </a>
-
-                    <a class="btn-outline" href="#!">
-                      <i class="fa-solid fa-code-compare"></i>
-                      <span>Compare Now</span>
-                    </a>
-                  </div>
                 </div>
+
+                <div class="col-lg-12 relmargin related-Product-section">
+
+                    <div class="divheadingrecommened">
+                      <h2>Products related to this item</h2>
+                    </div>
+      
+                    <div class="owl-carousel related-carousel owl-theme owl-carousel-custom">
+                      
+                      @foreach ($relatedProducts as $related)
+
+                      <div class="recommend-card item recommeneddiv">
+                        <!-- image -->
+                        <div class="recommend-img">
+                          <a href="{{ route('product.show', $related->slug) }}">
+                            <img src="{{ asset('storage/' . $related->product_images->first()->image_path) }}" alt="{{ $related->product_name }}">
+                            
+                          </a>
+                        </div>
+                        
+                        <div class="cardproductname">
+                          <a href="{{ route('product.show', $related->slug) }}">
+                            <h6 class="fw-semibold mb-2">{{ $related->product_name }}</h6>
+                          </a>
+                        </div>
+                        
+                        <div class="star">
+                          <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                          <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                          <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                          <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                          <i class="fa-solid fa-star" style="color: #fa6400;"></i>
+                        </div>
+                        
+                        <div class="cardprice">
+                          <h4 class="mb-2 price">${{ number_format($related->discounted_price, 2) }}</h4>
+                        </div>
+                        
+      
+                        <div class="collection">
+                          <div class="delivery">
+                            <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i> 
+                            <p style="float: left;">Available for Home Delivery</p>
+                          </div>
+      
+                          <div class="delivery">
+                            <i class="fa-solid fa-check" style="color: #12c58f; float: left;"></i>
+                            <p style="float: left;">Available for Collect from Store</p>
+                          </div>
+                        </div>
+      
+                        <!-- add to cart -->
+                        <div class="addtocartdiv">
+                          <a class="addtocartbtn" href="{{ route('addtocart') }}">Add to Cart</a>
+                        </div>
+      
+                      </div>
+      
+                      @endforeach
+
+
+                    </div>
+      
+                
+
+                </div>
+
+                
+                
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
+
+    
+
 
     <!-- tab card -->
     <section>

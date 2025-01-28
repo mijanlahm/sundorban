@@ -92,6 +92,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 20px;
 }
 
+.catpromargin {
+  margin-bottom: 15px;
+}
+
 
 /*===== search bar =======*/
 
@@ -1347,6 +1351,7 @@ mega menu
   background-color: #fa6400;
   width: 300px;
   border: none;
+  height: 51px;
 }
 
 .proaddtocartbtn {
@@ -1365,11 +1370,14 @@ mega menu
 /*====== xzoom ==========*/
 
 .xzoomimgdiv {
-  width: 500px;
+  width: 400px;
   height: 400px;
   overflow: hidden;
   box-sizing: border-box;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  margin-left: 91px;
 }
+
 
 .xzoomimg{
   width: 100%;
@@ -1378,9 +1386,418 @@ mega menu
 
 .xzoomthubmargin {
   margin-top: 20px;
+  margin-left: 91px;
+}
+
+/*=========== end xzoom =========*/
+
+/*========== start related product ==========*/
+
+.relmargin {
+  margin-top: 60px;
+}
+
+.related-Product-section .owl-carousel .owl-nav {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.related-Product-section .owl-carousel .owl-nav button.owl-next:focus,
+.related-Product-section .owl-carousel .owl-nav button.owl-prev:focus {
+  outline: none;
+}
+
+.related-Product-section .owl-carousel .owl-nav button.owl-next,
+.related-Product-section .owl-carousel .owl-nav button.owl-prev {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: #323c41;
+}
+
+.related-Product-section .owl-carousel .owl-nav button.owl-next:hover,
+.related-Product-section .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #ff6600;
+}
+.related-Product-section .owl-carousel .owl-nav button.owl-next span,
+.related-Product-section .owl-carousel .owl-nav button.owl-prev span {
+  font-size: 40px;
+  margin-top: -13px;
+  display: block;
+}
+
+/*=========== end related product ============*/
+
+
+/*=========== add to cart ===========*/
+
+.addtocartheading {
+  background-color: #323c41;
+  height: 45px;
+  color: white;
+  padding: 10px;
+}
+
+.addtocartbody {
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.cart-card {
+  background-color: white;
+  display: block; 
+  width: 100%;   
+  position: relative;
+  height: 225px;
+}
+
+.addtocatimg {
+  width: 30%;
+  height: 130px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cartproname {
+  width: 60%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 242px;
+}
+
+.pricesec {
+  position: relative;
+}
+
+.cartproperprice {
+	width: 10%;
+	position: absolute;
+	top: 83px;
+	left: 242px;
+}
+
+.cartproprice {
+	position: absolute;
+	top: 84px;
+	right: 12px;
+}
+
+.qntytndiv {
+	position: absolute;
+	top: 64px;
+	left: 466px;
+}
+
+.addtocatimg img {
+  width: 80%;
+}
+
+.checkoutbtn {
+  width: 90%;
+  margin-left: 23px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.ordersummary {
+  background-color: white;
+  height: 465px;
+}
+
+.subtotal {
+  position: relative;
+  height: 30px;
+}
+
+.subheading {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.subheading-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.deliveryfee p {
+  font-size: 15px;
+}
+
+.total {
+  position: relative;
+  height: 30px;
+}
+
+.totalheading {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.total-price {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.stripelogo img {
+  width: 100%;
+  height: 100%;
+}
+
+.personaldetail p {
+  text-align: center;
+}
+
+.personaldetail h6 {
+  text-align: center;
+}
+
+.personaldetail a {
+  text-decoration: underline;
+}
+
+.cartquatitybtn {
+  margin-left: 0px;
+  height: 40px;
+}
+
+.cartquatitybtn p {
+  margin-left: 39px;
+}
+
+.cartremovebtn {
+	position: absolute;
+	top: 112px;
+	left: 238px;
+	margin-top: 50px;
+}
+
+.cartremovebtn button{
+  width: 120px;
+  height: 40px;
+}
+
+.totalamount {
+  float: right;
+  overflow: hidden;
+  width: 70%;
+  margin-top: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.subamount {
+  overflow: hidden;
+  height: 50px;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid black;
 }
 
 
+.subamountheading {
+  float: left;
+}
+
+.subamoutprice {
+  float: right;
+}
+
+.deliveryheading {
+  float: left;
+}
+
+.deliveryprice {
+  float: right;
+}
+
+.totalamheading {
+  float: left;
+}
+
+.totalamprice {
+  float: right;
+}
+
+
+
+.subcheckbtn {
+  overflow: hidden;
+  height: 50px;
+  padding: 10px;
+  height: 100px;
+}
+
+.subcheckbtn button {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.subtotaldiv {
+  margin-top: 20px;
+  width: 60%;
+  float: right;
+}
+
+.chkbtn {
+  margin-top: 8px;
+  margin-left: 177px;
+}
+/*============ end add to cart =============*/
+
+
+/*============ start Delivery Options =========*/
+
+.option-card {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent; /* Default border */
+}
+
+.option-card:hover {
+  border-color: #007bff;
+}
+
+.option-card.selected {
+  border-color: #007bff; /* Blue border for selected option */
+  background-color: #f8f9fa;
+}
+
+#continue-btn {
+  display: none; /* Hidden by default */
+}
+
+.option-card input[type="radio"] {
+  margin-right: 10px;
+}
+
+.option-card input {
+  width: auto;
+}
+
+
+/*============= end Delivery Options ===========*/
+
+
+/* ============ start Select store option ===============*/
+.securebtn {
+  margin-bottom: 15px;
+}
+
+/* ============= end Select store option ==================*/
+
+/*============== start Secure Checkout ==================*/
+
+.center-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 350px;
+  background-color: white; /* Set background color to white */
+  border: 1px solid #ddd; /* Optional: adds a border around the div */
+  padding: 20px;
+}
+.secureinput {
+  width: 440px; /* Set width of the input to 440px */
+  height: 40px; /* Set height of the input to 40px */
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.btn-container button {
+  width: 350px; /* Set width of the buttons to 350px */
+  height: 42px; /* Set height of the buttons to 42px */
+  margin-bottom: 10px;
+}
+
+/*============== end Secure Checkount ===================*/
+
+/*=============== start contact details ===============*/
+
+.contact-head {
+  background-color: #323c41;
+  height: 65px;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+}
+
+
+    .contactcon {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-top: 50px;
+      max-width: 900px;
+    }
+
+    .contactcon h2 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .con-form-label {
+      font-weight: bold;
+      color: #444;
+    }
+
+    .con-form-control, .con-form-select {
+      border-radius: 5px;
+      border: 1px solid #fa6400;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    .con-row {
+      margin-bottom: 20px;
+    }
+
+    .con-mb-3 {
+      margin-bottom: 25px;
+    }
+
+    
+    .con-form-control::placeholder {
+      color: #888;
+    }
+
+    .con-form-select {
+      width: 100%;
+    }
+
+    .form-row {
+      margin-bottom: 1.5rem;
+    }
+
+
+    @media (max-width: 768px) {
+      .colmargin {
+        margin-bottom: 15px;
+      }
+    }
+
+/*==================== end contact details =================*/
 .btn-outline i {
   color: #97d0ff;
 }
@@ -1408,3 +1825,41 @@ mega menu
 .tab-card .nav-link.active {
   font-weight: 600;
 }
+
+
+/* responsive */
+@media all and (max-width: 767.9px) {
+  .xzoomthubmargin {
+    margin-left: 0px;
+  }
+
+  .xzoomimgdiv {
+    margin-left: 162px;
+  }
+
+}
+
+/* responsive */
+@media all and (max-width: 500px) {
+ 
+  .xzoomimgdiv {
+    margin-left: 0px;
+  }
+
+  .xzoomimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .xzoomimgdiv {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+  }
+
+  .xzoomthubmargin {
+    margin-left: 0px;
+  }
+
+}
+

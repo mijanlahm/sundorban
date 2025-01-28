@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Middleware\InitializeGuestCart;
 use App\Http\Controllers\admin\AdminMainController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\ProductAttributeController;
@@ -31,10 +31,16 @@ Route::controller(HomePageController::class)->group(function () {
 });
 
 Route::controller(ProductHomeController::class)->group(function () {
+
+    Route::get('/product/{id}', 'product_show')->name('product.show');
+    Route::get('/add-to-cart', 'add_to_cart')->name('addtocart');
+    Route::get('/delivery-options', 'delivery_options')->name('deliveryOption.show');
+    Route::get('/select-store', 'select_store')->name('selectStore.show');
+    Route::get('/secure-checkout', 'secure_checkout')->name('secureCheckout.show');
+    Route::get('/contact-details', 'contact_details')->name('contactDetails.show');
     
-    Route::get('/Microwave', 'show_microwave')->name('microwave');
-    Route::get('/product/{slug}', 'product_show')->name('product.show');
 });
+
 
 Route::controller(HomepageCategoryController::class)->group(function () {
     
@@ -42,6 +48,10 @@ Route::controller(HomepageCategoryController::class)->group(function () {
     Route::get('/Mobile', 'show_mobile')->name('mobile');
 
 });
+
+
+
+
 
 
 

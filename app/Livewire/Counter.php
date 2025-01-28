@@ -9,12 +9,12 @@ class Counter extends Component
 
     public $quantity = 1;
 
-    public function increment()
+    public function increment1()
     {
         $this->quantity++;
     }
 
-    public function decrement()
+    public function decrement1()
     {
         if ($this->quantity > 1) {
             $this->quantity--;

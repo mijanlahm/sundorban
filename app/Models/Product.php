@@ -50,6 +50,10 @@ class Product extends Model
         return $this->hasMany(ProductImage::class);
     }
 
+    public function images(){
+        return $this->hasMany(ProductImage::class);
+    }
+
     public function productImages(){
         return $this->hasMany(ProductImage::class, 'product_id');
     }
@@ -58,4 +62,13 @@ class Product extends Model
     {
         return $this->productImages()->first(); // Fetch the first image
     }
+
+    public function cartItems()
+    {
+        return $this->hasMany(cart_items::class);
+    }
+    
+
+    
+
 }

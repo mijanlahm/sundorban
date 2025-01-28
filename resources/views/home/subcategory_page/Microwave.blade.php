@@ -184,9 +184,9 @@
 
               @if($subcategory->products->isNotEmpty())
                       
-                          @foreach($subcategory->products as $product)
+              @foreach($subcategory->products as $product)
                   
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-4 col-md-6 catpromargin">
                 <div class="recommend-card item recommeneddiv">
                   <!-- image -->
                   <div class="recommend-img">
@@ -206,7 +206,7 @@
                   <div class="textpadding">
                     <div class="cardproductname">
                       
-                      <a href="{{ route('product.show', $product->slug) }}">
+                      <a href="{{ route('product.show', $product->id) }}">
                         <h6 class="fw-semibold mb-2">{{ $product->product_name }}</h6>
                       </a>
 

@@ -210,7 +210,7 @@ $( document ).ready( function() {
           items: 1
         },
         600: {
-          items: 3
+          items: 2
         },
         1000: {
           items: 4
@@ -290,7 +290,7 @@ $( document ).ready( function() {
           items: 1
         },
         600: {
-          items: 3
+          items: 2
         },
         1000: {
           items: 4
@@ -388,7 +388,7 @@ $( document ).ready( function() {
           items: 1
         },
         600: {
-          items: 3
+          items: 2
         },
         1000: {
           items: 4
@@ -407,3 +407,74 @@ $( document ).ready( function() {
         Xoffset: 15
     });
 });
+
+
+
+/*=================================
+      Related product owl Carousel
+  =================================*/
+  $(document).ready(function() {
+    var owl = $('.related-carousel');
+    owl.owlCarousel({
+      margin: 35,
+      nav:true,
+      dots:false,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  })
+
+
+/*=================================
+      Delivery Options 
+  =================================*/
+
+  function handleSelection(input) {
+    // Deselect all cards
+    document.querySelectorAll('.option-card').forEach((card) => {
+      card.classList.remove('selected');
+    });
+
+    // Select the clicked card
+    input.parentElement.classList.add('selected');
+
+    // Show the Continue button
+    const continueButton = document.getElementById('continue-btn');
+    if (document.querySelector('input[name="deliveryOption"]:checked')) {
+      continueButton.style.display = 'inline-block';
+    }
+  }
+
+  // Unselect radio buttons and hide Continue button when clicking outside options
+  document.addEventListener('click', function (event) {
+    const deliveryForm = document.getElementById('delivery-form');
+    if (!deliveryForm.contains(event.target)) {
+      // Deselect all radio buttons
+      document.querySelectorAll('.option-card').forEach((card) => {
+        card.classList.remove('selected');
+      });
+      document.querySelectorAll('input[name="deliveryOption"]').forEach((radio) => {
+        radio.checked = false;
+      });
+
+      // Hide the Continue button
+      const continueButton = document.getElementById('continue-btn');
+      continueButton.style.display = 'none';
+    }
+  });
+
+
+/*=================================
+      Select Store Options 
+  =================================*/
+
