@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade'); // Customer who placed the order
-            $table->string('status')->default('pending'); // Order status (pending, completed, cancelled, etc.)
-            $table->decimal('total_price', 10, 2);
             $table->string('delivery_type'); // Either "home_delivery" or "click_and_collect"
+            $table->foreignId('collection_id')->nullable()->constrained('click_collect_stores')->onDelete('cascade'); // If click & collect
             $table->string('shipping_address')->nullable(); // Address for home delivery
+            $table->decimal('total_price', 10, 2);
+            $table->enum('status', ['pending', 'completed', 'cancelled'])->default('pending');
             $table->timestamps();
         });
     }

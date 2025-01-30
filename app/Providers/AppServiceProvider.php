@@ -4,6 +4,10 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Auth\Events\Login;
+use Illuminate\Support\Facades\Event;
+use App\Listeners\MergeGuestCart;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -19,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // 
     }
 
     

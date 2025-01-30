@@ -1,5 +1,7 @@
 <div>
     
+    <div class="container-fluid">
+
     <div class="row my-5">
           
         <div class="col-lg-8">
@@ -13,9 +15,9 @@
               <h5>Sold by Mijan Ltd</h5>
             </div>
 
-            @if ($cart && $cart->items->count() > 0)
+            @if ($cartItems->count() > 0)
       
-            @foreach ($cart->items as $item)
+            @foreach ($cartItems as $item)
         
             <div class="addtocartbody p-3">
                         
@@ -47,22 +49,22 @@
                             <div class="qntytndiv">
                                 <p>Quantity</p>
                                 <div class="qntydiv clearfix">
-                                    <button class="btn btn-danger qntybtnin" wire:click="updateQuantity({{ $item->id }}, {{ $item->quantity - 1 }})"><h4>-</h4></button>
+                                    <button class="btn btn-danger qntybtnin" wire:click="decreaseQuantity({{ $item->id }})"><h4>-</h4></button>
                                     <span style="margin-left: 55px;font-size: 21px;">{{ $item->quantity }}</span>
-                                    <button class="btn btn-success qntybtnde" wire:click="updateQuantity({{ $item->id }}, {{ $item->quantity + 1 }})"><h4>+</h4></button>
+                                    <button class="btn btn-success qntybtnde" wire:click="increaseQuantity({{ $item->id }})"><h4>+</h4></button>
                                 </div>
                                 
                             </div>
                 
                             <div class="cartremovebtn">
-                                <button wire:click="removeItem({{ $item->id }})" class="btn btn-warning">Remove</button>
+                                <button wire:click="removeFromCart({{ $item->id }})" class="btn btn-warning">Remove</button>
                             </div>
                         </div>
 
                         <div class="cartproprice">
                            
                             <h6 style="margin-left: 69px;">Total</h6>
-                            <h4>${{ number_format($item->quantity * $item->price_at_checkout, 2) }}</h4>
+                            <h4>${{ number_format($item->price_at_checkout * $item->quantity, 2) }}</h4>
                               
                         </div>
 
@@ -94,7 +96,7 @@
               <div class="cart-card">
                 <div class="subamount">
                   <div class="subamountheading"><h5>Subtotal:</h5></div>
-                  <div class="subamoutprice"><h5>${{ number_format($cart->total_price, 2) }}</h5></div>
+                  <div class="subamoutprice"><h5>${{ number_format($totalPrice, 2) }}</h5></div>
               </div>
 
               <div class="subamount">
@@ -104,11 +106,11 @@
 
               <div class="subamount">
                 <div class="totalamheading"><h3>Grand Total:</h3></div>
-                <div class="totalamprice"><h3>${{ number_format($cart->total_price, 2) }}</h3></div>
+                <div class="totalamprice"><h3>${{ number_format($totalPrice, 2) }}</h3></div>
               </div>
 
               <div class="subcheckbtn">
-                <a href="{{ route('deliveryOption.show') }}"><button class="btn btn-primary chkbtn">Go to checkout</button></a>
+                <a href="{{ route('deliveryOption.show') }}"><button wire:click="checkout" class="btn btn-primary chkbtn">Go to checkout</button></a>
               </div>    
 
                   
@@ -141,7 +143,7 @@
 
             <div class="subtotal clearfix">
               <div class="subheading"><h6>Subtotal</h6></div>
-              <div class="subheading-price"><h6>${{ number_format($cart->total_price, 2) }}</h6></div>
+              <div class="subheading-price"><h6>${{ number_format($totalPrice, 2) }}</h6></div>
             </div>
 
             <div class="deliveryfee">
@@ -151,7 +153,7 @@
 
             <div class="total my-3 clearfix">
               <div class="totalheading"><h4>Grand Total</h4></div>
-              <div class="total-price"><h4>${{ number_format($cart->total_price, 2) }}</h4></div>
+              <div class="total-price"><h4>${{ number_format($totalPrice, 2) }}</h4></div>
             </div>
 
             <a href="{{ route('deliveryOption.show') }}">
@@ -182,7 +184,9 @@
         @else
         <p>Your cart is empty.</p>
         @endif
-
+    </div>
+    
+    
 </div>
 
     

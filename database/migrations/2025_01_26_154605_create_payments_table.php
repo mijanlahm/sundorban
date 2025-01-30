@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('order_id')->constrained('orders')->onDelete('cascade'); // Associated order
             $table->string('payment_method'); // e.g., stripe, paypal
-            $table->string('payment_status')->default('pending'); // Payment status (pending, completed, failed)
+            $table->string('stripe_payment_id')->unique();
+            $table->enum('status', ['pending', 'successful', 'failed'])->default('pending');
             $table->string('payment_reference')->nullable(); // Payment gateway reference ID
             $table->decimal('amount', 10, 2);
             $table->timestamps();

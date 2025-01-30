@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('home.layouts.layoutsHome')
 @section('home')
 
     <section id="slider" style="height: auto;">

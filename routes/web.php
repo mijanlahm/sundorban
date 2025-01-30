@@ -18,6 +18,10 @@ use App\Http\Controllers\Seller\SellerProductController;
 use App\Http\Controllers\Seller\SellerStoreController;
 use App\Livewire\HomepageComponent;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Cart;
+use App\Livewire\ProductDetails;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
 
 Route::get('/homeforlogin', function () {
     return view('welcome');
@@ -30,16 +34,11 @@ Route::controller(HomePageController::class)->group(function () {
 
 });
 
-Route::controller(ProductHomeController::class)->group(function () {
 
-    Route::get('/product/{id}', 'product_show')->name('product.show');
-    Route::get('/add-to-cart', 'add_to_cart')->name('addtocart');
-    Route::get('/delivery-options', 'delivery_options')->name('deliveryOption.show');
-    Route::get('/select-store', 'select_store')->name('selectStore.show');
-    Route::get('/secure-checkout', 'secure_checkout')->name('secureCheckout.show');
-    Route::get('/contact-details', 'contact_details')->name('contactDetails.show');
-    
-});
+Route::get('/product/{productId}', ProductDetails::class)->name('product.details');
+
+
+
 
 
 Route::controller(HomepageCategoryController::class)->group(function () {
@@ -51,6 +50,23 @@ Route::controller(HomepageCategoryController::class)->group(function () {
 
 
 
+Route::middleware(['auth', 'verified'])->group(function () {
+
+    Route::get('/cart', Cart::class)->name('cart.view');
+
+    Route::prefix('cart')->group(function () {
+        
+        Route::controller(ProductHomeController::class)->group(function () {
+
+            Route::get('/delivery-options', 'delivery_options')->name('deliveryOption.show');
+            Route::get('/click-and-collect/select-store', 'select_store')->name('selectStore.show');
+            Route::get('/delivery-address/contact-details', 'contact_details')->name('contactDetails.show');
+            
+        });
+        
+    });
+
+});
 
 
 

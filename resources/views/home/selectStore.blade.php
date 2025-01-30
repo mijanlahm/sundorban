@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('home.layouts.layoutsHome')
 @section('home')
 
       <div class="container mt-5">
@@ -81,7 +81,7 @@
 
           <!-- Continue Button -->
           <div class="mt-5 text-center">
-            <a href="{{ route('secureCheckout.show') }}">
+            <a href="{{ route('contactDetails.show') }}">
               <button type="button" class="btn btn-primary" id="continue-btn">Continue</button>
             </a>
           </div>

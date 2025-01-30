@@ -1,4 +1,4 @@
-@extends('layouts.user')
+@extends('home.layouts.layoutsHome')
 @section('home')
 
       @if($iphoneSubcategory && $iphoneSubcategory->subcategoriesid->isNotEmpty())
@@ -192,7 +192,7 @@
                   <div class="recommend-img">
                     
 
-                    <a href="{{ route('product.show', $product->slug) }}">
+                    <a href="{{ route('product.details', $product->id) }}">
 
                       @if($product->firstImage())
                           <img src="{{ asset('storage/' . $product->firstImage()->image_path) }}" alt="{{ $product->product_name }}" >
@@ -208,7 +208,7 @@
                   <div class="textpadding">
                     <div class="cardproductname">
 
-                      <a href="{{ route('product.show', $product->slug) }}">
+                      <a href="{{ route('product.details', $product->id) }}">
                         <h6 class="fw-semibold mb-2">{{ $product->product_name }}</h6>
                       </a>
                     
